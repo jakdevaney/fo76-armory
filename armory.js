@@ -11,7 +11,7 @@ let currentCombo = 0;
 $(document).ready( function() {
 
     loadSlots();
-    loadEffects();
+    fetchEffects();
 
     $('#addButton').on('click', addArmorFromSelects);
     $('#armorTable tbody').on('click', '.deleteButton', deleteArmor);
@@ -46,8 +46,13 @@ function loadSlots() {
     }
 }
 
+function fetchEffects() {
+    $.getJSON('./legendary_effects.json', function(data) {
+        effects = data
+    }).done(loadEffects)
+}
+
 function loadEffects() {
-    $.getJSON('legendary_effects.json', function(data) { effects = data });
     effects.armorEffects.forEach( function(effect, i) {
         const star = effect.star;
         const id = effect.id;

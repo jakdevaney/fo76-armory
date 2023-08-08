@@ -121,6 +121,12 @@
             "name": "Zealot's",
             "description": "-15% damage from scorched"
         },
+		{
+            "id": 21,
+            "star": 2,
+            "name": "1 Star Legendary",
+            "description": "N/A"
+        },
         {
             "id": 22,
             "star": 2,
@@ -206,16 +212,28 @@
             "description": "Hunger and Thirst grow 10% slower"
         },
         {
-            "id": 21,
-            "star": 2,
-            "name": "1 Star Legendary",
-            "description": "N/A"
-        },
-        {
             "id": 36,
             "star": 2,
             "name": "Hardy",
             "description": "Receive 7% less explosion damage"
+        },
+		{
+            "id": 37,
+            "star": 3,
+            "name": "2 Star Legendary",
+            "description": "N/A"
+        },
+		{
+            "id": 43,
+            "star": 3,
+            "name": "Blocking",
+            "description": "-15% damage taken while blocking"
+        },
+        {
+            "id": 49,
+            "star": 3,
+            "name": "Acrobat's",
+            "description": "-50% Fall Damage"
         },
         {
             "id": 38,
@@ -234,18 +252,6 @@
             "star": 3,
             "name": "Doctor's",
             "description": "+5% effecticeness from Stimpaks, RadAway, and Rad-X"
-        },
-        {
-            "id": 43,
-            "star": 3,
-            "name": "Blocking",
-            "description": "-15% damage taken while blocking"
-        },
-        {
-            "id": 49,
-            "star": 3,
-            "name": "Acrobat's",
-            "description": "-50% Fall Damage"
         },
         {
             "id": 41,
@@ -318,12 +324,6 @@
             "star": 3,
             "name": "Reduced junk weight",
             "description": "Junk item weights reduced by 20%"
-        },
-        {
-            "id": 37,
-            "star": 3,
-            "name": "2 Star Legendary",
-            "description": "N/A"
         },
         {
             "id": 54,
