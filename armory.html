@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Fallout,Fallout 76,Armor,Armory,Combinations">
+	<title>Fallout 76 Armory</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="armory.js"></script>
+</head>
+<body style="height: 90%">
+	<center>
+		<span style="font-size: 36px; font-weight: bold;">Fallout 76 Armory</span>
+		</br>
+		<p>Add your armor, enter your desired legendary effects, then click calculate to see possible combinations.</p>
+		</br>
+		<table id="armorTable">
+			<caption>Add your armor :</caption>
+			<thead>
+				<tr id="addRow">
+					<td class="borderlessCell">
+						<select id="slotSelect">
+						</select>
+					</td>
+					<td class="borderlessCell">
+						<select id="star1Select"></select>
+					</td>
+					<td class="borderlessCell">
+						<select id="star2Select"></select>
+					</td>
+					<td class="borderlessCell">
+						<select id="star3Select"></select>
+					</td>
+					<td class="borderlessCell">
+						<button id="addButton">+</button>
+					</td>
+				</tr>
+				<tr>
+					<th>Slot</th>
+					<th>&star;</th>
+					<th>&star;&star;</th>
+					<th>&star;&star;&star;</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		</br>
+		<button id="loadButton">Load</button>
+		<button id="saveButton">Save</button>
+		</br>
+		</br>
+		<table id="1StarEffectTable" class="effectTables">
+			<caption>Enter your desired effects :</caption>
+			<thead>
+				<tr>
+					<th>&star;</th>
+					<th>#</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<table id="2StarEffectTable" class="effectTables">
+			<thead>
+				<tr>
+					<th>&star;&star;</th>
+					<th>#</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<table id="3StarEffectTable" class="effectTables">
+			<thead>
+				<tr>
+					<th>&star;&star;&star;</th>
+					<th>#</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		</br>
+		</br>
+		<button id="calculateButton">Calculate combinations</button>
+		<table id="combinationTable">
+			<caption>Your possible armor combinations :</caption>
+			<col width=130><col width=190><col width=570><col width=700>
+			<thead>
+				<tr>
+					<td colspan="4" class="borderlessCell centerAlignCell">
+						<button id="firstButton">&lt;&lt;</button>
+						<button id="prevButton">&lt;</button>
+						<label id="currentComboLabel">0 / 0</label>
+						<button id="nextButton">&gt;</button>
+						<button id="lastButton">&gt;&gt;</button>
+					</td>
+				</tr>
+				<tr>
+					<th>Slot</th>
+					<th>&star;</th>
+					<th>&star;&star;</th>
+					<th>&star;&star;&star;</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		</br>
+		<p>Tip: You can click on column headings to sort the tables.</p>
+	</center>
+	</br>
+</body>
+</html>
