@@ -387,7 +387,9 @@ function loadSlots() {
 }
 
 function loadEffects() {
-    //$.getJSON('legendary_effects.json', function(effects) {
+    $.getJSON('legendary_effects.json', function(effects) {
+        EFFECTS = effects;
+    });
     EFFECTS.armorEffects.forEach( function(effect, i) {
         const star = effect.star;
         const id = effect.id;
@@ -400,7 +402,6 @@ function loadEffects() {
             $(`#${star}StarEffectTable tbody`).append(effectRow);
         }
     });
-    //	})
 }
 
 function addArmor(slot, star1, star2, star3) {
